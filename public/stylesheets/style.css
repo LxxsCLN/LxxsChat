@@ -1,8 +1,83 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 a {
   color: #00B7FF;
+}
+
+.messageform{
+  display: flex;
+  flex-direction: column;
+  min-width: 20vw;
+  max-width: 60vw;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid black;
+  border-radius: 18px;
+  padding: 10px;
+  align-items: center;
+}
+
+.date{
+  font-size: 80%;
+  color: rgb(100, 100, 100);
+}
+
+.submitform{
+  width: max(15%, 100px);
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: black;
+  background-color: aliceblue;
+  cursor: pointer;
+}
+
+.button{
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: black;
+  background-color: aliceblue;
+}
+
+h3{
+  font-weight: 400;
+}
+
+.user-date{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.messagediv{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 16px;
+  padding: 10px;
+  gap: 10px;
+  background-color: rgb(235, 237, 255);
 }

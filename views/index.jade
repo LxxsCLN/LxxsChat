@@ -2,4 +2,13 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  a(class='button' href='/new') Nuevo Mensaje
+  p Ultimos mensajes:  
+  ul
+    each message in messages
+      div(class="messagediv")
+        div(class="user-date")
+          h2= message.user
+          p(class="date")= message.added
+        h3= message.text
+
